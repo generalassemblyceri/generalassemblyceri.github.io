@@ -50,6 +50,11 @@ h1{
   /* This is a font using the free google font linked in the html head section, the second is the fallback font */
 }
 
+h1:hover {
+	color: black;
+	cursor: pointer;
+	}
+
 h2{
   color: slategray;
   font-size: 18px;
