@@ -1,0 +1,144 @@
+/* Use this for comments in CSS code */
+/* Use webplatform.org for all styling lists for CSS */
+/* CSS is a styling laguage for FRONT END development */
+
+body {
+	background-color: whitesmoke;
+	/* General don't need this if background images covers the whole page. Can have multiple background layers */
+	background-image: url(../images/bg.jpg);
+	/* two dots and slash ( ../ ) is a file path, it says "leave this folder and go back one". If you want to go two folders back use it twice.
+	IF YOU WANT MORE THAN ONE BACKGROUND IMAGE THEN SEPARATE WITH COMMENT */
+	background-repeat: repeat;
+	/* Default is to repeat and tile over whole screen so this stops it */
+	background-size: 440px;
+	/* This is the size of the background image, this asks to cover whole screen */
+	background-attachment: fixed;
+	/* This stops background image from scrolling */
+	background-position: 50% 50%;
+	/* This puts the background image in the middle */
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	/* Separate order of fonts with comma, last one is any sans-serif font. THIS MAKES ALL TEXT ON PAGE HAVE THESE ATTRIBUTES */
+}
+
+/* For all the html div (see html file) just put .name This can't have number as start or a space*/
+.main{
+	max-width: 600px;
+	background: rgba(255,255,255,0.8);
+	margin: 0 auto;
+	/* Centres the box on the page as it has a width */
+	padding: 0px 30px 0px;
+	border-radius: 30px;
+	border: 3px;
+	box-shadow: 0px 0px 10px 10px rgba (255, 255, 255, 0.5);
+	/* horizontal position – vertical position – blur size - size of shadow. The rgba is red, green, blue and transparency from 0.0–0.1 */
+}
+
+h1{
+  background-color: red;
+  /* Background colour for the text box in whole rectangle */
+  color: whitesmoke;
+  /* Colour could also be a hexadecimal, rgb or rgba colour code. Hexadecimal is more robust across platforms */
+  font-size: 48px;
+  text-align: center;
+  margin-left: -30px;
+  text-transform: lowercase;
+  /* Better to change here rather than in the html content as the content could be beyond your control, i.e. inserts text from a database etc. */
+  letter-spacing: 5px;
+  width: 110%;
+  padding: 40 50 50 40px;
+  font-family: 'Open Sans', sans-serif;
+  /* This is a font using the free google font linked in the html head section, the second is the fallback font */
+}
+
+h2{
+  color: slategray;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: normal;
+  text-shadow: 0px 0px 5px slategray;
+
+}
+
+
+img{
+	border-radius: 50%;
+	/* Can also use percent and choose for each corner e.g. border-radius: 50% 0% 25% 10%; Could also use px size. If it's square then 50% will make it a circle */
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	border: 5px solid red;
+}
+	
+
+h3{
+  color: slategray;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* Because in JavaScript we have made h3 clickable the user needs to know that you can click when hover over */
+h3:hover {
+	color: black;
+	cursor: pointer;
+	}
+
+p{
+  text-align: justify;
+  color: rgb(0,0,0);
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.5;
+  list-style: none;
+}
+
+ul,
+ol{
+  text-align: justify;
+  color: rgb(0,0,0);
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.5;
+  list-style: none;
+    /* can do lowercase, lower-roman, lower-latin, lower-greek, hebrew etc. etc. */
+  padding-left: -30px;
+}
+
+/* Following makes an exception in the order shown */
+p:first-of-type {
+	color: slategray;
+	text-align: center;
+	font-weight: bold;
+}
+
+li{
+	text-align: justify;
+	list-style-position: inside;
+}
+
+a{
+	color: maroon;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:focus,
+/* Used when you use the tab key to scroll through buttons. The above has a comma so uses same attributes as the next line */
+a:hover{
+	color: #99ffaa;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
