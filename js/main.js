@@ -30,13 +30,16 @@ function askQuestions() {
 	$('h2').text('Hello ' + fullName);
 
 
-	if (firstName == 'General' || 'general' && fullName == 'General' || 'general' + lastName){
+
+	if (fullName.toLowerCase() == 'general assembly'){
+		console.log(firstName);
+			console.log('This is General Assembly')
+	} else if (firstName == 'General' || firstName ==  'general') /*&& fullName == 'General' || 'general' + lastName)*/ {
+
+		console.log(firstName);
 		// (firstName.toLowerCase() == 'general' && lastName.toLowerCase() != 'assembly'){
 		// This is a catch all as it converts all input to lower case and checks against the name
 		alert('Hello ' + fullName)
-	}
-	else if (fullName.toLowerCase() == 'general assembly'){
-			console.log('This is General Assembly')
 	}
 
 	var favColour = prompt('What is your favourite colour?');
